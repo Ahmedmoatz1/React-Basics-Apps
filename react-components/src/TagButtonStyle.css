@@ -1,0 +1,21 @@
+.tagbutton{
+    background-color: #199cd9;
+    border: none;
+    color: white;
+    transition: .5s;
+    width: 70px;
+    height: 30px;
+    margin: 25px auto;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0px 5px 7px rgba(0,0,0,.3);
+}
+.tagbutton:hover{background-color: rgb(41, 91, 199);
+    
+    box-shadow: 0px 5px 7px rgba(0,0,0,.7);
+    
+    
+}

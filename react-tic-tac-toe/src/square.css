@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.square {
+  background-color: #f9f9f9;
+  border: 2px solid #5563DE;
+  border-radius: 12px;
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 60px;
+  height: 80px;
+  margin: 5px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.square {
+  position: relative;
+  
+}
+
+.square:hover {
+  background-color: #e0e6ff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.game-info {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.game-info button {
+  background-color: #fff;
+  color: #5563DE;
+  border: none;
+  padding: 8px 14px;
+  margin: 4px 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-info button:hover {
+  background-color: #5563DE;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.reset-btn:hover {
+  background-color: #ff2e44;
+  transform: scale(1.05);
+}
+.winner{
+    position: relative;
+  background-color: rgba(255, 223, 0, 0.85);  backdrop-filter: blur(8px);
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  animation: move 1.4s linear infinite;
+  transition: .5s;
+}
+@keyframes move {
+  0% {
+    bottom: 0px;
+  }
+   50%{
+    bottom: 30px;
+    transform: scale(1.2);
+    
+   }
+  
+  100% {
+    bottom: 0px;
+  }
+}
